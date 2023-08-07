@@ -21,8 +21,11 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
         
         setUpViewModel()
+        println("Simple Note Taking App with MVVM architecture")
 
     }
+
+
 
     private fun setUpViewModel() {
         val noteRepository = NoteRepository(NoteDatabase(this))
