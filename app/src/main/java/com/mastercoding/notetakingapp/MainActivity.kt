@@ -21,11 +21,12 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
         
         setUpViewModel()
+
         println("Simple Note Taking App with MVVM architecture")
 
+        println("I am Jagan Sivakumar")
+
     }
-
-
 
     private fun setUpViewModel() {
         val noteRepository = NoteRepository(NoteDatabase(this))
